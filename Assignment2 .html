@@ -1,0 +1,145 @@
+<html>
+<head>
+    <h1>About Us</h1>
+</head>
+<body>
+    <h1 class="title">Responsive Heading</h1>
+    <p>We are a team of developers building cool stuff</p>
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+    </nav>      
+    <div class="box">This is a styled box.</div>
+    <button class="btn">Submit</button>
+
+    <!-- Move the other elements after the button -->
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <div class="card">
+        <h3>Product Title</h3>
+        <p>Some product description goes here.</p>
+    </div>
+    <div class="image-container">
+        <img src="photo.png" alt="Product" width="200">
+        <span class="badge">New</span>
+    </div>
+    <table>
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2</td></tr>
+        <tr><td>Row 3</td></tr>
+        <tr><td>Row 4</td></tr>
+    </table>
+</body>
+<style>
+    h1{
+        text-align: center;
+    }
+    p{
+        color: #333333;
+        font-size:20px
+    }
+    /* Add new link styles */
+    nav {
+        display: flex;
+        gap: 20px;
+        padding: 15px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        padding-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+
+    nav a.active {
+        border-bottom: 2px solid #007BFF;
+        color: #007BFF;
+    }
+
+    nav a:hover {
+        color: #FFA500;
+    }
+
+    .box {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    .btn {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;  /* Add this line */
+        display: block;    /* Add this line */
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 5px;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    tr:nth-child(odd) {
+        background-color: #ffffff;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ff4444;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 20px;
+        }
+    }
+</style>
+</html>
