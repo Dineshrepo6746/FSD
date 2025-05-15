@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .project-list {
+            margin: 20px 0;
+        }
+        .project-list li {
+            margin-bottom: 20px;
+        }
+        .media-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Dinesh's Portfolio</h1>
+        <img src="D:\FSD\photo.png" alt="Background Image" class="hero-image">
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <p>This is Dinesh's portfolio page created using HTML and CSS. It showcases my skills and projects.</p>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects I Have Worked On</h2>
+            <ol class="project-list">
+                <li>
+                    <a href="https://colab.research.google.com/drive/1RdrJ_fGE2vi5mg3VszE62F1l9TLu8yWp?usp=drive_link">Zero Shot Medical Image Classification</a> - Implemented a few-shot skin cancer classification system using CLIP and Vision Transformers (ViT). Extracted image features via a ViT-based encoder and computed text embeddings using CLIP’s text encoder.
+                </li>
+                <li>
+                    <a href="https://colab.research.google.com/drive/1RdrJ_fGE2vi5mg3VszE62F1l9TLu8yWp?usp=drive_link">Automated Cloud Based Audio Harassment Detection</a> - Cloud-Based Audio Retrieval: Developed an AWS Lambda function to fetch and process new audio files from an AWS S3 bucket automatically. Utilized OpenAI’s Whisper AI for accurate speech transcription, handling various accents and noise levels.
+                </li>
+                <li>
+                    <a href="https://colab.research.google.com/drive/1RdrJ_fGE2vi5mg3VszE62F1l9TLu8yWp?usp=drive_link">Sentiment Analysis Using Fast API</a> - A project that includes Hugging Face functionality.
+                </li>
+            </ol>
+        </section>
+
+        <section id="media" class="media-section">
+            <h2>Media</h2>
+            <article>
+                <h3>Introduction Video</h3>
+                <video width="320" height="240" controls>
+                    <source src="D:\FSD\WIN_20250202_22_34_11_Pro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </article>
+
+            <article>
+                <h3>Background Music</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dinesh's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
