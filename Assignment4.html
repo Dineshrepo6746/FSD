@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Contact Form</title>
+</head>
+<body>
+    <section class="contact-form">
+        <h1>Please fill the Smart Contact Form</h1>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="satisfaction">Satisfaction Level (1-10):</label>
+                <input type="range" id="satisfaction" name="satisfaction" 
+                       min="1" max="10" value="5">
+                <span id="satisfactionValue">5</span><br><br>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        const satisfactionInput = document.getElementById('satisfaction');
+        const satisfactionValue = document.getElementById('satisfactionValue');
+        
+        satisfactionInput.addEventListener('input', function() {
+            satisfactionValue.textContent = this.value;
+        });
+    </script>
+</body>
+</html>
