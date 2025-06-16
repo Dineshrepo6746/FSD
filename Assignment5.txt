@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback & Web Storage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        article, aside {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1>User Feedback Form</h1>
+            <form id="feedbackForm">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                </div>
+                <div>
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </article>
+
+        <aside>
+            <h2>Understanding Web Storage</h2>
+            <p>Web Storage provides two important mechanisms for storing data in the browser:</p>
+            
+            <h3>localStorage:</h3>
+            <p>localStorage is a persistent storage that keeps data even after the browser is closed. It's useful for:</p>
+            <ul>
+                <li>Saving user preferences</li>
+                <li>Storing shopping cart items</li>
+                <li>Caching application data</li>
+            </ul>
+
+            <h3>sessionStorage:</h3>
+            <p>sessionStorage is temporary storage that exists only during the browser session. It's used for:</p>
+            <ul>
+                <li>Temporary form data</li>
+                <li>Session-specific settings</li>
+                <li>Page-to-page data transfer</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
