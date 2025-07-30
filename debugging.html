@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology Lab Worksheet 2</title>
+    <style>
+        /* === General Styles === */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            margin: 0.5em 0;
+        }
+
+        /* === Task 1: Responsive Layout Fix === */
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        /* Prevent horizontal overflow */
+        html, body {
+            overflow-x: hidden;
+        }
+
+        /* === Task 2: Vertical Alignment in Navbar === */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* FIXED: changed from flex-start to center */
+            padding: 1em;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav img {
+            width: 50px;
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* === Task 3: Button Animation Fix === */
+        .animated-btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .animated-btn:hover {
+            background-color: red;
+            transform: scale(1.2);
+        }
+
+        /* === Task 4: Fix Content Overflow === */
+        .container {
+            width: 300px;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 20px auto;
+        }
+
+        .content {
+            background: lightblue;
+            padding: 20px;
+            margin: 15px;
+            box-sizing: border-box;
+            /* FIX: reduce width or use box-sizing */
+            width: calc(100% - 30px); /* account for margins */
+        }
+
+        /* Add spacing between tasks */
+        section {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 1 -->
+    <section>
+        <header>
+            <h1>Debugging Exercise</h1>
+        </header>
+        <main>
+            <div class="content-box">
+                <h2>Content Box 1</h2>
+                <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+            </div>
+            <div class="content-box">
+                <h2>Content Box 2</h2>
+                <p>CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Debugging Exercise</p>
+        </footer>
+    </section>
+
+    <!-- Task 2 -->
+    <section>
+        <nav>
+            <img src="Media/jesse.webp" alt="Logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Task 3 -->
+    <section style="text-align: center;">
+        <button class="animated-btn">Hover Me</button>
+    </section>
+
+    <!-- Task 4 -->
+    <section>
+        <div class="container">
+            <div class="content">Overflowing content</div>
+        </div>
+    </section>
+
+</body>
+</html>

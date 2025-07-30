@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    color: #222;
+}
+header {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    text-align: center;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 16px rgba(30,60,114,0.15);
+}
+main {
+    max-width: 850px;
+    margin: 2.5rem auto;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 24px rgba(42,82,152,0.10);
+}
+h1 {
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: #1e3c72;
+}
+h2 {
+    color: #2a5298;
+    border-bottom: 2px solid #e0eafc;
+    padding-bottom: 0.35rem;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+ul {
+    padding-left: 1.5rem;
+}
+ul li {
+    background: #f4faff;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 1px 4px rgba(42,82,152,0.04);
+}
+ul li:hover {
+    background: #d0e6ff;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: linear-gradient(90deg, #2a5298 0%, #1e3c72 100%);
+    color: #fff;
+    margin-top: 2.5rem;
+    border-radius: 0 0 18px 18px;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(30,60,114,0.08);
+}
+footer:hover {
+    filter: brightness(1.08) saturate(1.2);
+    transition: filter 0.2s;
+}
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(42,82,152,0.12);
+    overflow: hidden;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #2a5298;
+    box-shadow: 0 2px 8px rgba(42,82,152,0.15);
+    background: #fff;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    color: #e0eafc;
+    margin-top: 0.5rem;
+}
+
+hr {
+    border: none;
+    border-top: 1.5px solid #e0eafc;
+    margin: 2rem 0;
+}
+
+.skills-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background: #e0eafc;
+    color: #2a5298;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 1px 4px rgba(42,82,152,0.06);
+}
